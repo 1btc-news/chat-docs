@@ -1,5 +1,15 @@
 # 1BTC Chat API
 
+## Overview
+
+The 1BTC API is a critical component of the 1BTC Chat platform, a unique community designed for Bitcoin holders with at least 1 Bitcoin. This API underpins the platform's innovative wallet-first approach, where a user's cryptocurrency address serves as their login identity, offering an added layer of pseudonymity, privacy, and security.
+
+By automating the verification process, the API facilitates a dust transaction method to cryptographically link user accounts and confirm ownership of at least 1 Bitcoin.
+
+This API also allows for independent verification of all relevant data, ensuring transparency and integrity within the 1BTC Chat community.
+
+## Endpoints
+
 {% swagger method="get" path="" baseUrl="https://1btc-api.console.xyz/" summary="System Info" %}
 {% swagger-description %}
 Returns network information and minimum valid BTC balance.
@@ -30,10 +40,10 @@ wallet address to check
     owner: string,                      // owner hiro wallet address (maybe evm, solana... in the future)
     receiveAddress: string,             // randomly generated bitcoin adress to deposit dust amount
     origin: string | undefined | null,  // the detected bitcoin address sent dust amount to receiveAddress
-    status: string                      // "pending" | "valid" | "invalid"
-                                        // pending  => waiting for the dust amount
-                                        // valid    => origin balance gte minValid
-                                        // invalid  => origin balance lt minValid
+    status: string                      // "pending" | "valid" | "insufficient"
+                                        //   pending => waiting for the dust amount
+                                        //   valid => origin balance gte minValid
+                                        //   insufficient => origin balance lt minValid
 }
 ```
 {% endswagger-response %}
@@ -93,9 +103,9 @@ Registers new account using Hiro wallet signature and public key.
     receiveAddress: string,             // randomly generated bitcoin adress to deposit dust amount
     origin: string | undefined | null,  // the detected bitcoin address sent dust amount to receiveAddress
     status: string                      // "pending" | "valid" | "insufficient"
-                                        // pending  => waiting for the dust amount
-                                        // valid    => origin balance gte minValid
-                                        // invalid  => origin balance lt minValid
+                                        //   pending => waiting for the dust amount
+                                        //   valid => origin balance gte minValid
+                                        //   insufficient => origin balance lt minValid
 }
 ```
 {% endswagger-response %}
