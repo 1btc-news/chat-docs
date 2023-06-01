@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Fullcoiner Chat](README.md)
+* [1BTC Chat](README.md)
