@@ -1,4 +1,6 @@
 # Table of contents
 
-* [1BTC Chat](README.md)
-* [1BTC Chat API](1btc-chat-api.md)
+* [1btc Chat](README.md)
+* [1btc Chat API](1btc-chat-api.md)
+* [1btc Verification](https://verify.1btc.chat)
+* [1btc Website](https://1btc.chat)

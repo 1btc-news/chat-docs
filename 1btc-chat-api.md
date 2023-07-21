@@ -1,12 +1,12 @@
-# 1BTC Chat API
+# 1btc Chat API
 
 ## Overview
 
-The 1BTC API is a critical component of the 1BTC Chat platform, a unique community designed for Bitcoin holders with at least 1 Bitcoin. This API underpins the platform's innovative wallet-first approach, where a user's cryptocurrency address serves as their login identity, offering an added layer of pseudonymity, privacy, and security.
+The 1btc Chat API is a critical component of the 1btc Chat platform, a unique community designed for Bitcoin holders with at least 1 Bitcoin. This API underpins the platform's innovative wallet-first approach, where a user's cryptocurrency address serves as their login identity, offering an added layer of pseudonymity, privacy, and security.
 
 By automating the verification process, the API facilitates a dust transaction method to cryptographically link user accounts and confirm ownership of at least 1 Bitcoin.
 
-This API also allows for independent verification of all relevant data, ensuring transparency and integrity within the 1BTC Chat community.
+This API also allows for independent verification of all relevant data, ensuring transparency and integrity within the 1btc Chat community.
 
 ## Endpoints
 
