@@ -40,10 +40,11 @@ wallet address to check
     owner: string,                      // owner hiro wallet address (maybe evm, solana... in the future)
     receiveAddress: string,             // randomly generated bitcoin adress to deposit dust amount
     origin: string | undefined | null,  // the detected bitcoin address sent dust amount to receiveAddress
-    status: string                      // "pending" | "valid" | "insufficient"
+    status: string                      // "pending" | "valid" | "insufficient" | "duplicate"
                                         //   pending => waiting for the dust amount
                                         //   valid => origin balance gte minValid
                                         //   insufficient => origin balance lt minValid
+                                        //   duplicate => origin address already used to verify an account
 }
 ```
 {% endswagger-response %}
@@ -106,6 +107,7 @@ Registers new account using Hiro wallet signature and public key.
                                         //   pending => waiting for the dust amount
                                         //   valid => origin balance gte minValid
                                         //   insufficient => origin balance lt minValid
+                                        //   duplicate => origin address already used to verify an account
 }
 ```
 {% endswagger-response %}
