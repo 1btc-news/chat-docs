@@ -8,6 +8,10 @@
 
 This platform aims to bring together this exclusive group, leveraging their strong value signal and enabling them to collaborate and shape their own narrative.
 
+## Mission
+
+Our mission is to expand and protect human sovereignty.
+
 ## Comparison with other platforms
 
 The 1btc Chat platform sets itself apart from other social platforms like Discord and Telegram, which typically employ traditional authentication methods.
