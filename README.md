@@ -2,7 +2,9 @@
 
 ## Introduction
 
+{% hint style="info" %}
 **1btc Chat is a unique community designed specifically for Bitcoin holders who possess at least 1 BTC.**
+{% endhint %}
 
 This platform aims to bring together this exclusive group, leveraging their strong value signal and enabling them to collaborate and shape their own narrative.
 
@@ -16,12 +18,13 @@ Instead, 1btc Chat adopts a wallet-first approach, where users' cryptocurrency a
 
 To ensure the authenticity of the community, it is crucial to verify that a user possesses at least 1 BTC. This verification process involves the following steps:
 
-1. **Connect a Wallet:** Connect with either a Hiro or Xverse wallet, both renowned leaders in Bitcoin standards on the web. This is used to to generate the required signatures and determine the dust address for verification.
-2. **Sign a Message:** Sign a message from the API to prove ownership of the logged in wallet, which in turn will generate a unique BTC address for verification.
-3. **Send Dust Transaction:** Send a minimal amount of Bitcoin from the address with more than 1 BTC to the generated BTC address. This amount is commonly referred to as "dust" and equal to 0.00006 BTC or 6,000 satoshis.\
-   <mark style="color:orange;">**Note: nobody has access to this address, and the dust will not be returned.**</mark>
-4. **Await Verification:** The API actively monitors the generated BTC address for receiving the dust transaction. Upon successful receipt of the dust, the API verifies the user's account balance and marks it as verified.\
-   <mark style="color:orange;">**Note: if the user spends any Bitcoin from the address, their verified status will be revoked, resulting in the loss of access to the chat.**</mark>
+1. [**Connect a Wallet:**](verification/connect-wallet.md) Connect with either a [Hiro](https://wallet.hiro.so/wallet/install-web) or [Xverse](https://www.xverse.app/) wallet, used to to generate the required signatures and determine the dust address for verification.
+2. [**Designate BTC:**](verification/designate-btc.md) Create a separate account for the balance used to verify in the wallet of your choice, then transfer a little more than 1 BTC to cover transaction fees. This Bitcoin cannot be spent or access will be lost.
+3. [**Sign a Message:**](verification/sign-message.md) Sign a message from the 1btc API to prove ownership of the Hiro/Xverse wallet, which in turn will generate a unique Bitcoin address for verifying the balance.
+4. [**Send Dust Transaction:**](verification/send-dust.md) Send a minimal amount of Bitcoin from the address with more than 1 BTC to the unique, generated BTC address. This amount is commonly referred to as "dust" and equal to 0.00006 BTC or 6,000 satoshis.\
+   <mark style="color:orange;">**Note: nobody has access to this dust address, and the dust will not be returned.**</mark>
+5. **Await Verification:** The API actively monitors the generated BTC address for receiving the dust transaction. Upon successful receipt of the dust, the API verifies the user's account balance and marks it as verified.\
+   <mark style="color:orange;">**Note: if the user spends Bitcoin from the address, their verified status will be revoked, resulting in the loss of access to the chat.**</mark>
 
 ## Security and Privacy
 
