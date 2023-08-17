@@ -1,3 +1,7 @@
+---
+description: '1btc.chat: Verification, Security and Privacy'
+---
+
 # 1btc Chat
 
 ## Introduction
